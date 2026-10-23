@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="[https://www.gitskins.com/api/section/portrait?username=alpha-cassius&theme=github-dark&style=terminal&color=1&motion=cap-tip&v=signature-cap-tip-1&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F175388712%3Fu%3De2e49350d421f6fc5bb7045b657421b6e0d8dc6e%26v%3D4](https://substackcdn.com/image/fetch/$s_!OHaK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7485933d-06de-47d1-a3f1-734b0d379df4_1200x630.jpeg)" width="620" alt="NLP using transformers animated graduation portrait" />
+<img src="https://substackcdn.com/image/fetch/$s_!OHaK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7485933d-06de-47d1-a3f1-734b0d379df4_1200x630.jpeg" width="620" alt="NLP using transformers animated graduation portrait" />
 
 <h1>NLP Pipelines with Transformers</h1>
 <h3>From Scratch to Advanced Colab Implementations</h3>
