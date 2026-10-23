@@ -66,7 +66,7 @@ I built this repository to demonstrate how to implement production-ready NLP pip
 ## ⚙️ Technology Arsenal
 
 <div align="center">
-  <img src="https://www.gitskins.com/api/readme-reference/technology-stack?username=alpha-cassius&theme=github-dark&logos=Jupyter%20Notebook%2CPython%2CTransformers%2CGitHub&v=signature-cap-tip-languages-3" alt="Vaibhav Pandey technology stack" />
+  <img src="https://www.gitskins.com/api/readme-reference/technology-stack?username=alpha-cassius&theme=github-dark&logos=Jupyter%20Notebook%2CPython%2CGitHub&v=signature-cap-tip-languages-3" alt="Vaibhav Pandey technology stack" />
 </div>
 <br>
 
