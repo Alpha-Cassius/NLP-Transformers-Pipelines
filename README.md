@@ -11,9 +11,9 @@
 
 </div>
 
-## 🌌 The mission: Decoding NLP with Transformers
+## The mission: NLP with Transformers
 
-Natural Language Processing (NLP) is how machines understand, generate, and manipulate human language. Before 2017, this was done using slow, sequential models like RNNs. Then, Google introduced the **Transformer** architecture in the seminal paper *"Attention Is All You Need"*[cite: 2].
+Natural Language Processing (NLP) is how machines understand, generate, and manipulate human language. Before 2017, this was done using slow, sequential models like RNNs. Then, Google introduced the **Transformer** architecture in the paper *"Attention Is All You Need"*[cite: 2].
 
 Transformers changed everything by relying entirely on **Self-Attention mechanisms**[cite: 2]. Instead of reading a sentence word-by-word, a Transformer processes all tokens in parallel, calculating how strongly each word relates to every other word in the sequence[cite: 2, 4]. This enables:
 *   **Massive Parallelization:** Training on modern GPUs is exceptionally fast[cite: 2, 17].
@@ -22,70 +22,49 @@ Transformers changed everything by relying entirely on **Self-Attention mechanis
 
 I built this repository to demonstrate how to implement production-ready NLP pipelines from scratch using Google Colab, PyTorch, and Hugging Face.
 
-### The Core Transformer Data Flow
-```mermaid
-graph TD
-    A[Raw Input Text] --> B[Tokenization & Sub-word Splitting]
-    B --> C[Token Embeddings]
-    C --> D[Positional Encoding]
-    D --> E{Transformer Blocks}
-    
-    subgraph Attention Mechanism
-    E --> F[Queries Q, Keys K, Values V]
-    F --> G[Scaled Dot-Product Attention]
-    G --> H[Multi-Head Attention]
-    H --> I[Add & Norm / Residuals]
-    I --> J[Feed Forward Network]
-    end
-    
-    J --> K[Output Logits]
-    K --> L[Softmax / Decoding Strategy]
-    L --> M[Final Output Generation]
+## What I’m building
 
-```
+<table width="100%">
+<tr>
+<td width="50%" valign="top"><h3>⚡ Text Generation</h3><p>Using foundational models like GPT-2 to predict and generate sequential text autonomously.</p><p><strong>Why it matters:</strong> The core mechanism behind AI chatbots and automated coding assistants.</p></td>
+<td width="50%" valign="top"><h3>⚡ Sentiment Analysis</h3><p>Deploying fine-tuned classification models to instantly grade text as positive, negative, or neutral.</p><p><strong>Why it matters:</strong> Essential for analyzing user feedback, reviews, and social media trends at scale.</p></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><h3>⚡ Summarization & Translation</h3><p>Leveraging lightweight chat models (Qwen1.5) to condense massive documents and translate English to French.</p><p><strong>Why it matters:</strong> Solves information overload by extracting core insights across language barriers.</p></td>
+<td width="50%" valign="top"><h3>⚡ Named Entity Recognition (NER)</h3><p>Using a BERT-based pipeline to scan unstructured text and extract Locations, Organizations, and People.</p><p><strong>Why it matters:</strong> Converts chaotic raw text data into structured, queryable databases.</p></td>
+</tr>
+</table>
 
-## 🏗️ What I’m building
+<p align="center"><a href="https://github.com/alpha-cassius?tab=repositories">Explore my repositories →</a> · <a href="https://github.com/alpha-cassius?tab=stars">See open-source signal →</a></p>
 
-### Pipeline Execution Architecture
+## Technology arsenal
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant HF_Pipeline as Hugging Face Pipeline
-    participant Tokenizer
-    participant Model as Transformer Model
-    User->>HF_Pipeline: Input Text
-    HF_Pipeline->>Tokenizer: Convert Text to Token IDs
-    Tokenizer-->>HF_Pipeline: Input Tensors & Attention Mask
-    HF_Pipeline->>Model: Forward Pass
-    Model-->>HF_Pipeline: Hidden States / Logits
-    HF_Pipeline-->>User: Decoded Output (Sentiment, Summary, Entities)
+<div align="center">
 
-```
+<!-- Custom gitskins tech stack reflecting this project's dependencies -->
+<img src="https://www.gitskins.com/api/readme-reference/technology-stack?username=alpha-cassius&theme=github-dark&logos=Jupyter%20Notebook%2CPython%2CPyTorch%2CGitHub&v=signature-cap-tip-languages-3" alt="Vaibhav Pandey technology stack" />
 
-## ⚙️ Technology arsenal
+</div>
 
-## 🚀 How to run these pipelines
+<table width="100%">
+<tr><td width="28%"><strong>Languages & tools</strong></td><td>Jupyter Notebook (Google Colab) | Python 3 | PyTorch | Hugging Face Transformers</td></tr>
+<tr><td><strong>Model Ecosystem</strong></td><td>GPT-2 (Generation) · Qwen Chat (QA/Summarization) · BERT (NER)</td></tr>
+<tr><td><strong>Project Structure</strong></td><td>Modular Colab workflows designed for instantaneous cloud execution.</td></tr>
+</table>
 
-To run these models yourself, all you need is a browser.
+## How to run these pipelines
+
+To run these models yourself, all you need is a browser. 
 
 1. Open [Google Colab](https://colab.research.google.com/).
 2. Create a new notebook and run `!pip install -q transformers`.
 3. Copy the code blocks from this repository into the cells.
 4. Run the cells to dynamically download the model weights and execute the NLP tasks.
 
-### Text Generation Pipeline Logic
+## Let’s build useful software
 
-```mermaid
-graph LR
-    A[Prompt: "The future is"] --> B(Tokenizer)
-    B --> C[Model Inference]
-    C --> D{Decoding Strategy}
-    D -->|Greedy| E[Highest Probability Token]
-    D -->|Top-K/Top-P| F[Sampled Token]
-    E --> G[Append to Input]
-    F --> G
-    G -->|Repeat| C
+I’m interested in collaborating with founders, engineers, AI infrastructure teams, and open-source maintainers working on hard problems with care and curiosity.
 
-```
+<p align="center"><a href="https://github.com/alpha-cassius"><img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&amp;labelColor=0d1117" alt="GITHUB" /></a> <a href="https://github.com/alpha-cassius?tab=repositories"><img src="https://img.shields.io/badge/FOLLOW_MY_WORK-0d1117?style=for-the-badge&amp;labelColor=0d1117" alt="FOLLOW MY WORK" /></a> <a href="https://github.com/alpha-cassius"><img src="https://img.shields.io/badge/BUILD_WITH_ME-22d3ee?style=for-the-badge&amp;labelColor=0d1117" alt="BUILD WITH ME" /></a></p>
 
+<div align="center"><sub>Made with 💖 and ☕ by Vaibhav Pandey</sub></div>
