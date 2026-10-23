@@ -66,13 +66,13 @@ I built this repository to demonstrate how to implement production-ready NLP pip
 ## ⚙️ Technology Arsenal
 
 <div align="center">
-  <img src="https://www.gitskins.com/api/readme-reference/technology-stack?username=alpha-cassius&theme=github-dark&logos=Jupyter%20Notebook%2CPython%2CPyTorch%2CGitHub&v=signature-cap-tip-languages-3" alt="Vaibhav Pandey technology stack" />
+  <img src="https://www.gitskins.com/api/readme-reference/technology-stack?username=alpha-cassius&theme=github-dark&logos=Jupyter%20Notebook%2CPython%2CTransformers%2CGitHub&v=signature-cap-tip-languages-3" alt="Vaibhav Pandey technology stack" />
 </div>
 <br>
 
 | Category | Technologies |
 | :--- | :--- |
-| **Languages & Tools** | Jupyter Notebook (Google Colab) · Python 3 · PyTorch · Hugging Face Transformers |
+| **Languages & Tools** | Jupyter Notebook (Google Colab) · Python 3 · Hugging Face Transformers |
 | **Model Ecosystem** | GPT-2 *(Generation)* · Qwen Chat *(QA/Summarization)* · BERT *(NER)* |
 | **Project Structure** | Modular Colab workflows designed for instantaneous cloud execution. |
 
